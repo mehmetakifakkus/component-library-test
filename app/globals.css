@@ -4,8 +4,9 @@
 
 :root {
   --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
+  --background-start-rgb: 255, 255, 255;
   --background-end-rgb: 255, 255, 255;
+  --color-primary: #1890ff;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -30,4 +31,9 @@ body {
   .text-balance {
     text-wrap: balance;
   }
+}
+
+.ant-select-multiple .ant-select-selection-item {
+  color: rgb(var(--foreground-rgb));
+  border-radius: 60px;
 }
